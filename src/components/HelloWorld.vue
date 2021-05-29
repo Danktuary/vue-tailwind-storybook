@@ -31,25 +31,17 @@
 	<p>Edit <code>components/HelloWorld.vue</code> to test hot module replacement.</p>
 </template>
 
-<script lang="ts">
-import { ref, defineComponent, } from 'vue';
+<script setup lang="ts">
+import { defineProps, ref } from 'vue';
 
-export default defineComponent({
-	name: 'HelloWorld',
-	props: {
-		message: {
-			type: String,
-			required: true,
-		},
-	},
-	setup() {
-		const count = ref(0);
-
-		return {
-			count,
-		};
+const props = defineProps({
+	message: {
+		type: String,
+		required: true,
 	},
 });
+
+const count = ref(0)
 </script>
 
 <style scoped>
