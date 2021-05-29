@@ -1,6 +1,37 @@
-# Vue 3 + Typescript + Vite
+# Vue 3 + Tailwind + Storybook
 
-This template should help get you started developing with Vue 3 and Typescript in Vite.
+This template should help get you started developing with Vue 3, Tailwind, and Storybook in Vite.
+
+## Notes
+
+- This is a barebones template.
+- Tailwind, PostCSS, and autoprefixer are installed as `tailwind@npm:@tailwindcss/postcss7-compat`, `postcss@^7`, and `autoprefixer@^9` due to PostCSS v8 incompadability with Storybook. [See here](https://tailwindcss.com/docs/installation#post-css-7-compatibility-build).
+- ESLint isn't set up (yet).
+- Using `storybook@6.3.0-beta.4` because v6.3.x supports bundling with Vite, but no official plugin yet. However, there is an [experimental community plugin](https://github.com/eirslett/storybook-builder-vite).
+
+### Useful links
+
+**Vite/Vue**:
+- https://vitejs.dev/guide/#scaffolding-your-first-vite-project
+- https://vitejs.dev/guide/features.html
+- https://vitejs.dev/config/
+- https://v3.vuejs.org/guide/composition-api-setup.html
+- https://github.com/vuejs/rfcs/pull/227
+- https://github.com/vuejs/rfcs/blob/script-setup-2/active-rfcs/0000-script-setup.md
+
+**Tailwind**:
+- https://tailwindcss.com/docs/editor-support
+- https://tailwindcss.com/docs/guides/vue-3-vite
+- https://tailwindcss.com/docs/configuration
+- https://tailwindcss.com/docs/using-with-preprocessors
+- https://tailwindcss.com/docs/optimizing-for-production
+
+**Storybook**:
+- https://storybook.js.org/docs/vue/get-started/install
+- https://storybook.js.org/docs/vue/writing-stories/introduction
+- https://storybook.js.org/docs/vue/configure/overview
+- https://storybook.js.org/docs/vue/essentials/controls
+- https://storybook.js.org/docs/vue/workflows/storybook-composition
 
 ## Recommended IDE Setup
 
