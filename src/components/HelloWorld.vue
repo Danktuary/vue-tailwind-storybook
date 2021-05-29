@@ -1,5 +1,5 @@
 <template>
-	<h1>{{ message }}</h1>
+	<h1 class="m-0 font-semibold text-3xl">{{ message }}</h1>
 	<p>
 		Recommended IDE setup:
 		<a href="https://code.visualstudio.com/" target="_blank">
@@ -25,8 +25,11 @@
 			Vue 3 Docs
 		</a>
 	</p>
-	<button @click="count++">
-		count is: {{ count }}
+	<button
+		@click="count++"
+		class="py-2 px-4 bg-green-500 text-white font-semibold rounded-lg shadow-md focus:outline-blue-500"
+	>
+		Count is: {{ count }}
 	</button>
 	<p>Edit <code>components/HelloWorld.vue</code> to test hot module replacement.</p>
 </template>
